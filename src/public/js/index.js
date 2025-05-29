@@ -2,7 +2,7 @@ let containerEquipamentos = document.querySelector(".container-equipamentos");
 
 async function consumoApi() {
   // request
-  const req = await fetch("http://localhost:3000/api/equipamentos");
+  const req = await fetch("/api/equipamentos");
   // response em json
   const data = await req.json();
 
