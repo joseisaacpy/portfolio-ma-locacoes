@@ -9,6 +9,7 @@
 }
 
 .hero-content {
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,10 +19,20 @@
   color: #fff;
 }
 
+.hero-content h2 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
 .hero-content a {
   padding: 0.5rem 1rem;
   border-radius: var(--radius);
   background-color: var(--color-2);
   color: #fff;
   border: none;
+  transition: var(--transition);
+}
+
+.hero-content a:hover {
+  transform: scale(1.1);
 }
