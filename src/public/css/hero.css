@@ -25,12 +25,18 @@
 }
 
 .hero-content a {
-  padding: 0.5rem 1rem;
+  padding: 1rem;
   border-radius: var(--radius);
   background-color: var(--color-2);
   color: #fff;
   border: none;
   transition: var(--transition);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.hero-content a i {
+  transform: rotate(20deg);
 }
 
 .hero-content a:hover {

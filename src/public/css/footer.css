@@ -1,0 +1,24 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--color-2);
+  color: #fff;
+  flex-direction: column;
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer p a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.footer p a:hover {
+  color: var(--color-4);
+}
