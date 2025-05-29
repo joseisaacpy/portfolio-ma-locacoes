@@ -1,0 +1,88 @@
+/* poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /* fonts */
+  --default-font: "Poppins", sans-serif;
+
+  /* colors */
+  --color-1: #8ecae6;
+  --color-2: #219ebc;
+  --color-3: #023047;
+  --color-4: #ffb703;
+  --color-5: #fb8500;
+
+  /* animation */
+  --transition: all 0.3s ease-in-out;
+
+  /* Font sizes (mobile first, escaláveis) */
+  --fs-xl: 2.5rem; /* Títulos grandes / destaque */
+  --fs-lg: 2rem; /* Subtítulo principal */
+  --fs-md: 1.25rem; /* Texto médio / parágrafos */
+  --fs-base: 1rem; /* Tamanho padrão */
+  --fs-sm: 0.875rem; /* Pequeno */
+  --fs-xs: 0.75rem; /* Muito pequeno */
+
+  /* radius */
+  --radius: 8px;
+}
+
+h1 {
+  font-size: var(--fs-xl);
+  font-weight: 600;
+}
+
+h2 {
+  font-size: var(--fs-lg);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+a {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+li {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+button {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+input {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+textarea {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+select {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+label {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+span {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}
+
+strong {
+  font-size: var(--fs-md);
+  font-weight: 400;
+}

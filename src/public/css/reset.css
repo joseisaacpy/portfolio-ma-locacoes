@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* html */
+html {
+  font-size: 16px;
+}
+
+/* body */
+body {
+  font-size: 1rem;
+  font-family: var(--default-font);
+}
+
+/* links */
+a {
+  text-decoration: none;
+}
+
+/* imagens */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* listas */
+li {
+  list-style: none;
+}
+
+/* botoes */
+button {
+  cursor: pointer;
+}
+
+/* inputs */
+input {
+  outline: none;
+}
+
+/* label */
+label {
+  cursor: pointer;
+}
