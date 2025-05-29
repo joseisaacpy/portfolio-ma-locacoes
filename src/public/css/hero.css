@@ -33,6 +33,7 @@
   transition: var(--transition);
   display: flex;
   gap: 0.5rem;
+  animation: pulse 1s ease-in-out infinite alternate;
 }
 
 .hero-content a i {

@@ -6,7 +6,7 @@
 
 /* titulo */
 .equipamentos h2 {
-    font-weight: 700;
+  font-weight: 700;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@
 
 /* item de equipamentos */
 .item-equipamento {
-    background-color: #fff;
+  background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   width: 300px;
   display: flex;
@@ -43,6 +43,12 @@
   background-color: var(--color-2);
   color: #fff;
   border-radius: 0px 0px 10px 10px;
+  transition: var(--transition);
+}
+
+.item-equipamento a:hover,
+.item-equipamento a:active {
+  background-color: var(--color-3);
 }
 
 /* imagem do equipamento */
