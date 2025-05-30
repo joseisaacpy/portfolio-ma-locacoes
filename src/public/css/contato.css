@@ -1,0 +1,43 @@
+.contato {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--color-logo-yellow);
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato h2 {
+  text-align: center;
+  font-size: var(--fs-xl);
+}
+
+.contato-canais {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contato-item {
+  background-color: #fff;
+  border: 2px solid #007bff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: var(--transition);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.contato-item:hover {
+  background-color: #007bff;
+  color: #fff;
+}
