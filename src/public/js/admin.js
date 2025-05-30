@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     e.preventDefault();
     // envia os dados do formulario
     // valor do input de nome
-    const nome = formularioDeEquipamentos.elements["nome"].value;
+    const nome = formularioDeEquipamentos.elements["nome"].value.trim();
     // valor do input de imagem(url)
-    const imagemUrl = formularioDeEquipamentos.elements["imagem"].value;
+    const imagemUrl = formularioDeEquipamentos.elements["imagem"].value.trim();
     // valor do input de preço
-    const preco = formularioDeEquipamentos.elements["preco"].value;
+    const preco = formularioDeEquipamentos.elements["preco"].value.trim();
     // cria um objeto com os dados do formulario
     const novoEquipamento = { nome, imagemUrl, preco };
 

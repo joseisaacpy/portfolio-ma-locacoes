@@ -10,7 +10,7 @@ async function consumoApi() {
     let item = document.createElement("div");
     item.classList.add("item-equipamento");
     item.innerHTML = `
-    <img src="${equipamento.imagem}" alt="${equipamento.nome}">
+    <img src="${equipamento.imagemUrl}" alt="${equipamento.nome}">
     <h3>${equipamento.nome}</h3>
     <p>${equipamento.preco}</p>
     <a 
