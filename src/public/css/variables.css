@@ -11,6 +11,8 @@
   --color-3: #023047;
   --color-4: #ffb703;
   --color-5: #fb8500;
+  --color-logo-blue: #03c8ff;
+  --color-logo-yellow: #fccd01;
 
   /* animation */
   --transition: all 0.3s ease-in-out;
@@ -34,7 +36,7 @@ h1 {
 
 h2 {
   font-size: var(--fs-lg);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 p {

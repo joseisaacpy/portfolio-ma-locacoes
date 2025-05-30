@@ -6,17 +6,18 @@
     <title>MA Locações</title>
     <link rel="stylesheet" href="css/index.css" />
     <!-- Script Umani -->
-    <!-- <script
+    <script
       defer
       src="https://cloud.umami.is/script.js"
       data-website-id="e26aad4f-40b6-4665-9cc4-3db6e016640d"
-    ></script> -->
+    ></script>
   </head>
   <body>
     <header class="header">
-      <h1>MA Locações</h1>
+      <h1>M.A Locações e Serviços</h1>
       <nav class="nav">
         <ul>
+          <li><a href="#home">Início</a></li>
           <li><a href="#equipamentos">Equipamentos</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -25,7 +26,7 @@
     </header>
     <main>
       <!-- hero -->
-      <section class="hero">
+      <section id="home" class="hero">
         <div class="hero-content">
           <h2>Soluções em Locações para Sua Obra</h2>
           <p>
@@ -37,13 +38,26 @@
         </div>
       </section>
       <!-- equipamentos -->
-      <section class="equipamentos">
+      <section id="equipamentos" class="equipamentos">
         <h2>Equipamentos Disponíveis</h2>
         <div class="container-equipamentos"></div>
       </section>
+      <!-- section contato -->
+      <section class="contato" id="contato"></section>
+      <!-- section local -->
+      <section id="local" class="local">
+        <h2>Nossa Localização</h2>
+        <iframe
+          title="Mapa com a localização da empresa"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.1521321112925!2d-42.750052138667!3d-5.0543414299209255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b9a2527c885%3A0x37f49e2890c80ed7!2zTS5BIExPQ0HDh8OVRVMgRSBTRVJWScOHT1M!5e0!3m2!1spt-BR!2sbr!4v1748641817542!5m2!1spt-BR!2sbr"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <footer class="footer">
-      <p>&copy; 2025 MA Locações</p>
+      <p>&copy; 2025 M.A Locações e Serviços</p>
       <p>
         Desenvolvido por <a href="https://github.com/joseisaacpy">José Isaac</a>
       </p>
