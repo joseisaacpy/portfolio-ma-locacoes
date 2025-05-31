@@ -16,7 +16,7 @@ async function consumoApi() {
     item.innerHTML = `
     <img src="${equipamento.imagemUrl}" alt="${equipamento.nome}">
     <h3>${equipamento.nome}</h3>
-    <p>${equipamento.preco}</p>
+    <p>Valor: R$${equipamento.preco}</p>
     <a href="https://api.whatsapp.com/send?phone=558674001151&text=Olá,%20tenho%20interesse%20em%20alugar%20o%20produto%20${encodeURIComponent(
       equipamento.nome
     )}!"
