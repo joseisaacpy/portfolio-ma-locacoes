@@ -1,0 +1,44 @@
+.servicos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.servicos h2 {
+  text-align: center;
+}
+
+.container-servicos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+@media (max-width: 700px) {
+  .container-servicos {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.servico {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-radius: var(--radius);
+  background-color: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.servico h3 {
+  text-align: center;
+}

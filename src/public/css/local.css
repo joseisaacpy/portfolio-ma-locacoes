@@ -1,4 +1,11 @@
 .local {
+  background: linear-gradient(
+    var(--color-logo-yellow),
+    var(--color-logo-yellow),
+    var(--color-2)
+  );
+  padding: 1rem;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +20,6 @@
 .local iframe {
   width: 100%;
   min-height: 350px;
-  border-radius: var(--radius);
   border: none;
-  /* padding: 1rem; */
+  border-radius: 20px;
 }

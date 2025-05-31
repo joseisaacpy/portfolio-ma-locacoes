@@ -43,7 +43,7 @@
 }
 
 .header .nav ul li a:hover {
-  color: var(--color-5);
+  color: var(--color-logo-yellow);
 }
 
 @media (max-width: 320px) {

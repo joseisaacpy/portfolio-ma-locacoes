@@ -2,7 +2,8 @@
   width: 100%;
   text-align: center;
   padding: 3rem 1rem;
-  background: var(--color-logo-yellow);
+  /* background: var(--color-logo-yellow); */
+  background: linear-gradient(to top, var(--color-logo-yellow), #fff);
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -33,10 +34,11 @@
 
 .contato-item {
   background-color: #fff;
-  border: 2px solid #007bff;
+  /* border: 2px solid #007bff; */
+  border: 2px solid var(--color-2);
   padding: 1rem 2rem;
   text-decoration: none;
-  color: #007bff;
+  color: var(--color-2);
   font-weight: bold;
   border-radius: var(--radius);
   transition: var(--transition);
@@ -50,6 +52,6 @@
 }
 
 .contato-item:hover {
-  background-color: #007bff;
+  background-color: var(--color-2);
   color: #fff;
 }

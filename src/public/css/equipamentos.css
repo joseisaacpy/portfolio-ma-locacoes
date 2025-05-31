@@ -48,7 +48,7 @@
 
 .item-equipamento a:hover,
 .item-equipamento a:active {
-  background-color: var(--color-3);
+  background-color: var(--color-1);
 }
 
 /* imagem do equipamento */
