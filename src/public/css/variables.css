@@ -87,3 +87,18 @@ strong {
   font-size: var(--fs-md);
   font-weight: 400;
 }
+
+/* botão whatsapp fixo */
+#btn-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 3rem;
+  color: #fff;
+  z-index: 10;
+  transition: var(--transition);
+  color: #25d366;
+}
+#btn-whatsapp:hover {
+  transform: scale(1.1);
+}
