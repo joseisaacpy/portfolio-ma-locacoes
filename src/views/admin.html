@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Painel Admin</title>
+    <link rel="stylesheet" href="./css/admin.css" />
     <!-- Script Umani -->
     <script
       defer
@@ -12,29 +13,38 @@
     ></script>
   </head>
   <body>
-    <h1>Cadastro de Equipamentos</h1>
-    <!-- formulario de cadastro -->
-    <form id="form-equipamento">
-      <input
-        type="text"
-        name="nome"
-        placeholder="Nome do equipamento"
-        required
-      /><br />
-      <input
-        type="text"
-        name="imagem"
-        placeholder="URL da imagem"
-        required
-      /><br />
-      <input
-        type="text"
-        name="preco"
-        placeholder="Preço (ex: R$ 50,00 por dia)"
-        required
-      /><br />
-      <button type="submit">Cadastrar</button>
-    </form>
+    <main>
+      <!-- formulario de cadastro -->
+      <section>
+        <h1>Cadastro de Equipamentos</h1>
+        <form id="form-equipamento">
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome do equipamento"
+            required
+          /><br />
+          <input
+            type="text"
+            name="imagem"
+            placeholder="URL da imagem"
+            required
+          /><br />
+          <input
+            type="text"
+            name="preco"
+            placeholder="Preço (ex: R$ 50,00 por dia)"
+            required
+          /><br />
+          <button type="submit">Cadastrar</button>
+        </form>
+      </section>
+      <!--  -->
+      <section>
+        <h2>Equipamentos Cadastrados</h2>
+        <ul id="lista-equipamentos"></ul>
+      </section>
+    </main>
     <!-- scripts -->
     <script src="../js/admin.js"></script>
   </body>

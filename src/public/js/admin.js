@@ -1,3 +1,4 @@
+// CREATE
 // evento de carregamento do DOM
 document.addEventListener("DOMContentLoaded", () => {
   // formulario de cadastro de equipamentos
@@ -34,4 +35,46 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Ocorreu um erro ao cadastrar o equipamento.");
     }
   });
+});
+
+// DELETE
+async function deletarEquipamento(id) {
+  if (!confirm("Deseja realmente excluir?")) return;
+
+  try {
+    await fetch(`/api/equipamentos/${id}`, { method: "DELETE" });
+    alert("Equipamento excluído!");
+    carregarEquipamentos(); // atualiza a lista
+  } catch (erro) {
+    console.error("Erro ao excluir:", erro);
+    alert("Erro ao excluir.");
+  }
+}
+
+// READ
+async function carregarEquipamentos() {
+  try {
+    const resposta = await fetch("/api/equipamentos");
+    const equipamentos = await resposta.json();
+
+    const lista = document.getElementById("lista-equipamentos");
+    lista.innerHTML = "";
+
+    equipamentos.forEach((eq) => {
+      const item = document.createElement("li");
+      item.classList.add("item-equipamento");
+      item.innerHTML = `
+        <strong>${eq.nome}</strong> R$ ${eq.preco}
+        <button id="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
+        <button id="btn-editar" onclick="editarEquipamento(${eq.id})">Editar</button>
+      `;
+      lista.appendChild(item);
+    });
+  } catch (erro) {
+    console.error("Erro ao carregar equipamentos:", erro);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  carregarEquipamentos();
 });

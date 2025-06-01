@@ -1,145 +1,120 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>M.A Locações e Serviços</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <!-- favucons -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="./images/favicons/favicon-96x96.png"
-      sizes="96x96"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./images/favicons/favicon.svg"
-    />
-    <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./images/favicons/apple-touch-icon.png"
-    />
-    <link rel="manifest" href="./images/favicons/site.webmanifest" />
-    <!-- Script Umani -->
-    <script
-      defer
-      src="https://cloud.umami.is/script.js"
-      data-website-id="e26aad4f-40b6-4665-9cc4-3db6e016640d"
-    ></script>
-  </head>
 
-  <body>
-    <header class="header">
-      <h1>M.A Locações e Serviços</h1>
-      <nav class="nav">
-        <ul>
-          <li><a href="#home">Início</a></li>
-          <li><a href="#equipamentos">Equipamentos</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <!-- hero -->
-      <section id="home" class="hero">
-        <div class="hero-content">
-          <h2>Soluções em Locações para Sua Obra</h2>
-          <p>
-            Andaimes, betoneiras, escoras, pisos metálicos, furadeiras, maquitas
-            e muito mais.
-          </p>
-          <a href="#equipamentos"
-            >Saiba mais <i class="fa-solid fa-screwdriver-wrench"></i
-          ></a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>M.A Locações e Serviços</title>
+  <link rel="stylesheet" href="css/index.css" />
+  <!-- favucons -->
+  <link rel="icon" type="image/png" href="./images/favicons/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="./images/favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="./images/favicons/site.webmanifest" />
+  <!-- Script Umani -->
+  <script defer src="https://cloud.umami.is/script.js" data-website-id="e26aad4f-40b6-4665-9cc4-3db6e016640d"></script>
+</head>
+
+<body>
+  <header class="header">
+    <h1>M.A Locações e Serviços</h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#equipamentos">Equipamentos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- hero -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h2>Soluções em Locações para Sua Obra</h2>
+        <p>
+          Andaimes, betoneiras, escoras, pisos metálicos, furadeiras, maquitas
+          e muito mais.
+        </p>
+        <a href="#equipamentos">Saiba mais <i class="fa-solid fa-screwdriver-wrench"></i></a>
+      </div>
+    </section>
+    <!-- equipamentos -->
+    <section id="equipamentos" class="equipamentos">
+      <h2>Equipamentos Disponíveis</h2>
+      <div class="container-equipamentos"></div>
+    </section>
+    <!-- section servicos -->
+    <section id="servicos" class="servicos">
+      <h2>Nossos Serviços</h2>
+      <div class="container-servicos">
+        <!--  -->
+        <div class="servico">
+          <img src="./images/servico-limpeza.webp" alt="Imagem de limpeza terceirizada" />
+          <h3>Limpeza</h3>
         </div>
-      </section>
-      <!-- equipamentos -->
-      <section id="equipamentos" class="equipamentos">
-        <h2>Equipamentos Disponíveis</h2>
-        <div class="container-equipamentos"></div>
-      </section>
-      <!-- section servicos -->
-      <section id="servicos" class="servicos">
-        <h2>Nossos Serviços</h2>
-        <div class="container-servicos">
-          <!--  -->
-          <div class="servico">
-            <img src="./images/servico-limpeza.webp" alt="" />
-            <h3>Limpeza</h3>
-          </div>
-          <!--  -->
-          <div class="servico">
-            <img src="./images/servico-de-ar-cond.webp" alt="" />
-            <h3>Manutenção de ar condicionado</h3>
-          </div>
+        <!--  -->
+        <div class="servico">
+          <img src="./images/servico-de-ar-cond.webp" alt="Imagem de um homem fazendo manutenção de ar condicionado" />
+          <h3>Manutenção de ar condicionado</h3>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- section contato -->
-      <section id="contato" class="contato">
-        <h2>Fale Conosco <i class="fa-regular fa-message"></i></h2>
-        <p>Estamos prontos para te atender!</p>
-        <p>Escolha o canal que preferir:</p>
+    <!-- section contato -->
+    <section id="contato" class="contato">
+      <h2>Fale Conosco <i class="fa-regular fa-message"></i></h2>
+      <p>Estamos prontos para te atender!</p>
+      <p>Escolha o canal que preferir:</p>
 
-        <div class="contato-canais">
-          <a
-            href="https://wa.link/q0y527"
-            target="_blank"
-            class="contato-item whatsapp"
-          >
-            <i class="fa-brands fa-whatsapp"></i> WhatsApp
-          </a>
-          <a
-            href="mailto:marcospaulo.rodrisilva@gmail.com"
-            target="_blank"
-            class="contato-item email"
-          >
-            <i class="fa-solid fa-envelope"></i> E-mail
-          </a>
-          <a
-            href="https://www.instagram.com/m_a_locacoes/"
-            target="_blank"
-            class="contato-item instagram"
-          >
-            <i class="fa-brands fa-instagram"></i> Instagram
-          </a>
-        </div>
-      </section>
-      <!-- section local -->
-      <section id="local" class="local">
-        <h2>Nossa Localização <i class="fa-solid fa-location-dot"></i></h2>
-        <iframe
-          title="Mapa com a localização da empresa"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.1521321112925!2d-42.750052138667!3d-5.0543414299209255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b9a2527c885%3A0x37f49e2890c80ed7!2zTS5BIExPQ0HDh8OVRVMgRSBTRVJWScOHT1M!5e0!3m2!1spt-BR!2sbr!4v1748641817542!5m2!1spt-BR!2sbr"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </section>
-    </main>
-    <footer class="footer">
-      <p>&copy; 2025 M.A Locações e Serviços</p>
-      <p>
-        Site desenvolvido por
-        <a href="https://github.com/joseisaacpy">José Isaac</a>
-      </p>
-    </footer>
-    <!-- botão whatsapp fixo -->
-    <a href="https://wa.link/q0y527"
-      ><i class="fa-brands fa-whatsapp" id="btn-whatsapp"></i
-    ></a>
+      <div class="contato-canais">
+        <a href="https://wa.link/q0y527" target="_blank" class="contato-item whatsapp">
+          <i class="fa-brands fa-whatsapp"></i> WhatsApp
+        </a>
+      </a>
+      <a href="https://www.instagram.com/m_a_locacoes/" target="_blank" class="contato-item instagram">
+        <i class="fa-brands fa-instagram"></i> Instagram
+      </a>
+      <a href="mailto:marcospaulo.rodrisilva@gmail" class="contato-item email">
+        <!-- marcospaulo.rodrisilva@gmail.com -->
+        Copiar e-mail
+        <i class="fa-solid fa-envelope"></i>
+      </a>
+      </div>
+    </section>
+    <!-- section local -->
+    <section id="local" class="local">
+      <h2>Nossa Localização <i class="fa-solid fa-location-dot"></i></h2>
+      <iframe title="Mapa com a localização da empresa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.1521321112925!2d-42.750052138667!3d-5.0543414299209255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e3b9a2527c885%3A0x37f49e2890c80ed7!2zTS5BIExPQ0HDh8OVRVMgRSBTRVJWScOHT1M!5e0!3m2!1spt-BR!2sbr!4v1748641817542!5m2!1spt-BR!2sbr"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+  </main>
+  <footer class="footer">
+    <p>&copy; 2025 M.A Locações e Serviços</p>
+    <p>
+      Site desenvolvido por
+      <a href="https://github.com/joseisaacpy">José Isaac</a>
+    </p>
+  </footer>
+  <!-- botão whatsapp fixo -->
+  <a href="https://wa.link/q0y527"><i class="fa-brands fa-whatsapp" id="btn-whatsapp"></i></a>
+  <!-- scripts -->
+  <script src="./js/index.js"></script>
+  <!-- icons fontawesome -->
+  <script src="https://kit.fontawesome.com/5432a0e64c.js" crossorigin="anonymous"></script>
+  <script>
+    // tag a do e-mail
+    let ancoraEmail = document.querySelector('.contato-item.email')
+    // função para copiar o e-mail
+    function copiarEmail(){
+      navigator.clipboard.writeText('marcospaulo.rodrisilva@gmail.com')
+      alert('E-mail copiado com sucesso!')
+    }
+    // chama a função ao clicar na tag a
+    ancoraEmail.addEventListener('click', copiarEmail)
+  </script>
+</body>
 
-    <!-- scripts -->
-    <script src="./js/index.js"></script>
-    <!-- icons fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/5432a0e64c.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

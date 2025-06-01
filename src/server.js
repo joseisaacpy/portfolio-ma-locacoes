@@ -35,7 +35,36 @@ app.get("/api/equipamentos", (req, res) => {
   // const filePath = path.join(__dirname, "data", "equipamentos.json");
   const data = fs.readFileSync(equipamentosPath, "utf-8");
   const equipamentos = JSON.parse(data);
-  res.json(equipamentos);
+  res.json(equipamentos.reverse());
+});
+
+// rota para equipamentos por id
+app.get("/api/equipamentos/:id", (req, res) => {
+  const id = req.params.id;
+  const data = fs.readFileSync(equipamentosPath, "utf-8");
+  const equipamentos = JSON.parse(data);
+  const equipamento = equipamentos.find((equipamento) => equipamento.id == id);
+  res.json(equipamento);
+});
+
+// rota para deletar equipamentos
+app.delete("/api/equipamentos/:id", (req, res) => {
+  const id = req.params.id;
+  const data = fs.readFileSync(equipamentosPath, "utf-8");
+  const equipamentos = JSON.parse(data);
+
+  const equipamentoIndex = equipamentos.findIndex(
+    (equipamento) => equipamento.id == id
+  );
+
+  if (equipamentoIndex === -1) {
+    return res.status(404).send({ error: "Equipamento não encontrado." });
+  }
+
+  equipamentos.splice(equipamentoIndex, 1);
+
+  fs.writeFileSync(equipamentosPath, JSON.stringify(equipamentos, null, 2));
+  res.status(204).send(); // sucesso sem conteúdo
 });
 
 // rota post para receber e salvar os dados
