@@ -39,15 +39,8 @@ app.get("/", (req, res) => {
 
 // rota para formulario de login
 app.get("/login", (req, res) => {
-  res.send(`
-      <h2>Login</h2>
-    <form method="POST" action="/login">
-      <input type="text" name="usuario" placeholder="Usuário" required />
-      <input type="password" name="senha" placeholder="Senha" required />
-      <button type="submit">Entrar</button>
-    </form>
-    
-    `);
+  const loginPath = path.join(__dirname, "views", "login.html");
+  res.status(200).sendFile(loginPath);
 });
 
 // middleware para ler dados de formulários
@@ -61,7 +54,15 @@ app.post("/login", (req, res) => {
     req.session.usuarioAutenticado = true;
     return res.redirect("/admin");
   }
-  res.send("Usuário ou senha inválidos. <a href='/login'>Tentar novamente</a>");
+  res
+    .status(401)
+    .send("Usuário ou senha inválidos. <a href='/login'>Tentar novamente</a>");
+});
+
+//  rota para deslogar/logout
+app.get("/logout", (req, res) => {
+  req.session.destroy();
+  res.redirect("/login");
 });
 
 // rota do admin preencher o form de equipamento
@@ -78,7 +79,7 @@ app.get("/api/equipamentos", (req, res) => {
   // const filePath = path.join(__dirname, "data", "equipamentos.json");
   const data = fs.readFileSync(equipamentosPath, "utf-8");
   const equipamentos = JSON.parse(data);
-  res.json(equipamentos.reverse());
+  res.status(200).json(equipamentos.reverse());
 });
 
 // rota para exibir equipamentos por id
@@ -87,7 +88,11 @@ app.get("/api/equipamentos/:id", (req, res) => {
   const data = fs.readFileSync(equipamentosPath, "utf-8");
   const equipamentos = JSON.parse(data);
   const equipamento = equipamentos.find((equipamento) => equipamento.id == id);
-  res.json(equipamento);
+  // se nao encontrar o equipamento, retorna erro
+  if (!equipamento)
+    return res.status(404).send({ error: "Equipamento nao encontrado." });
+  // retorna o equipamento
+  res.status(200).json(equipamento);
 });
 
 // rota para deletar equipamentos
