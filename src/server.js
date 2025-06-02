@@ -16,6 +16,8 @@ const adminPath = path.join(__dirname, "views", "admin.html");
 const equipamentosPath = path.join(__dirname, "data", "equipamentos.json");
 // importa o express session
 const session = require("express-session");
+// importa o dotenv
+require("dotenv").config();
 
 // middleware para server arquivos estátios da pasta public
 app.use(express.static(publicPath));
@@ -50,7 +52,7 @@ app.use(express.urlencoded({ extended: true }));
 app.post("/login", (req, res) => {
   const { usuario, senha } = req.body;
 
-  if (usuario === "admin" && senha === "admin") {
+  if (usuario === process.env.ADM_USER && senha === process.env.ADM_PASSWORD) {
     req.session.usuarioAutenticado = true;
     return res.redirect("/admin");
   }
