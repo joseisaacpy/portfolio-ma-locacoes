@@ -1,3 +1,27 @@
+// READ
+async function carregarEquipamentos() {
+  try {
+    const resposta = await fetch("/api/equipamentos");
+    const equipamentos = await resposta.json();
+
+    const lista = document.getElementById("lista-equipamentos");
+    lista.innerHTML = "";
+
+    equipamentos.forEach((eq) => {
+      const item = document.createElement("li");
+      item.classList.add("item-equipamento");
+      item.innerHTML = `
+        <strong>${eq.nome}</strong> R$ ${eq.preco}
+        <button id="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
+        <button id="btn-editar" onclick="editarEquipamento(${eq.id})">Editar</button>
+      `;
+      lista.appendChild(item);
+    });
+  } catch (erro) {
+    console.error("Erro ao carregar equipamentos:", erro);
+  }
+}
+
 // CREATE
 // evento de carregamento do DOM
 document.addEventListener("DOMContentLoaded", () => {
@@ -30,6 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Equipamento cadastrado com sucesso!");
       // reseta o formulario
       formularioDeEquipamentos.reset();
+      // atualiza a lista de equipamentos
+      carregarEquipamentos();
     } catch (error) {
       console.error("Erro ao cadastrar:", error);
       alert("Ocorreu um erro ao cadastrar o equipamento.");
@@ -48,30 +74,6 @@ async function deletarEquipamento(id) {
   } catch (erro) {
     console.error("Erro ao excluir:", erro);
     alert("Erro ao excluir.");
-  }
-}
-
-// READ
-async function carregarEquipamentos() {
-  try {
-    const resposta = await fetch("/api/equipamentos");
-    const equipamentos = await resposta.json();
-
-    const lista = document.getElementById("lista-equipamentos");
-    lista.innerHTML = "";
-
-    equipamentos.forEach((eq) => {
-      const item = document.createElement("li");
-      item.classList.add("item-equipamento");
-      item.innerHTML = `
-        <strong>${eq.nome}</strong> R$ ${eq.preco}
-        <button id="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
-        <button id="btn-editar" onclick="editarEquipamento(${eq.id})">Editar</button>
-      `;
-      lista.appendChild(item);
-    });
-  } catch (erro) {
-    console.error("Erro ao carregar equipamentos:", erro);
   }
 }
 

@@ -8,6 +8,7 @@ async function consumoApi() {
     // se não houver equipamentos, mostra mensagem
     if (data.length === 0) {
       let textoSemEquipamentos = document.createElement("h3");
+      textoSemEquipamentos.classList.add("sem-equipamentos");
       textoSemEquipamentos.textContent = "Nenhum equipamento cadastrado.";
       containerEquipamentos.appendChild(textoSemEquipamentos);
       return;
