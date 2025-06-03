@@ -153,6 +153,9 @@ app.post("/api/equipamentos", (req, res) => {
   });
 });
 
+// rota para atualizar um equipamento
+
+
 // porta do servidor
 const port = 3000;
 // inicia o servidor

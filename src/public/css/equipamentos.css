@@ -58,5 +58,8 @@
 
 /* imagem do equipamento */
 .item-equipamento img {
+  width: 100%;
+  height: 200px; /* você pode ajustar essa altura conforme o layout desejado */
+  object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 }
