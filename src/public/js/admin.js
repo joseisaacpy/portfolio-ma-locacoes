@@ -35,7 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // valor do input de nome
     const nome = formularioDeEquipamentos.elements["nome"].value.trim();
     // valor do input de imagem(url)
-    const imagemUrl = formularioDeEquipamentos.elements["imagem"].value.trim();
+    const imagemUrl =
+      formularioDeEquipamentos.elements["imagemUrl"].value.trim() ||
+      "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png";
     // valor do input de preço
     const preco = formularioDeEquipamentos.elements["preco"].value.trim();
     // cria um objeto com os dados do formulario
