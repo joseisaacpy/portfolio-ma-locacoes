@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Painel Admin</title>
     <link rel="stylesheet" href="./css/admin.css" />
+    <link
+      rel="shortcut icon"
+      href="./images/favicons/admin.svg"
+      type="image/x-icon"
+    />
     <!-- Script Umani -->
     <script
       defer
@@ -24,17 +29,15 @@
             placeholder="Nome do equipamento"
             required
           /><br />
-          <input
-            type="text"
-            name="imagemUrl"
-            placeholder="URL da imagem"
-          /><br />
+          <input type="text" name="imagemUrl" placeholder="URL da imagem" />
+          <br />
           <input
             type="text"
             name="preco"
             placeholder="Preço (ex: R$ 50,00)"
             required
-          /><br />
+          />
+          <br />
           <button type="submit">Cadastrar</button>
         </form>
       </section>
@@ -42,25 +45,6 @@
       <section>
         <h2>Equipamentos Cadastrados</h2>
         <ul id="lista-equipamentos"></ul>
-      </section>
-      <section id="editar-equipamento">
-        <form id="form-editar" style="display: none">
-          <input type="hidden" id="edit-id" />
-          <input
-            type="text"
-            id="edit-nome"
-            placeholder="Nome do Equipamento"
-            required
-          />
-          <input
-            type="text"
-            id="edit-imagem"
-            placeholder="URL da Imagem"
-            required
-          />
-          <input type="text" id="edit-preco" placeholder="Preço" required />
-          <button type="submit">Salvar Alterações</button>
-        </form>
       </section>
     </main>
 

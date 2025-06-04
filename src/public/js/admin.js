@@ -12,7 +12,7 @@ async function carregarEquipamentos() {
       item.classList.add("item-equipamento");
       item.innerHTML = `
         <strong>${eq.nome}</strong> R$ ${eq.preco}
-        <button class="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
+        <button class="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir <i class="fa-solid fa-trash" style="color: #ffffff;"></i></button>
         `;
       lista.appendChild(item);
     });
