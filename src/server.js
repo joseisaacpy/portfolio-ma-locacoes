@@ -14,6 +14,7 @@ const indexPath = path.join(__dirname, "views", "index.html");
 const adminPath = path.join(__dirname, "views", "admin.html");
 // caminho do json de equipamentos
 const equipamentosPath = path.join(__dirname, "data", "equipamentos.json");
+
 // importa o express session
 const session = require("express-session");
 // importa o dotenv
@@ -31,6 +32,11 @@ app.use(
     secret: "nodeExpress",
     resave: false,
     saveUninitialized: false,
+    cookie: {
+      httpOnly: true,
+      sameSite: "lax", // ou 'strict' se quiser máxima segurança
+      secure: false, // coloque true apenas se usar HTTPS
+    },
   })
 );
 
@@ -154,7 +160,7 @@ app.post("/api/equipamentos", (req, res) => {
 });
 
 // rota para atualizar um equipamento
-
+// será implementada futuramente (PUT ou PATCH)
 
 // porta do servidor
 const port = 3000;

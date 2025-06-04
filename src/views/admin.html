@@ -43,7 +43,28 @@
         <h2>Equipamentos Cadastrados</h2>
         <ul id="lista-equipamentos"></ul>
       </section>
+      <section id="editar-equipamento">
+        <form id="form-editar" style="display: none">
+          <input type="hidden" id="edit-id" />
+          <input
+            type="text"
+            id="edit-nome"
+            placeholder="Nome do Equipamento"
+            required
+          />
+          <input
+            type="text"
+            id="edit-imagem"
+            placeholder="URL da Imagem"
+            required
+          />
+          <input type="text" id="edit-preco" placeholder="Preço" required />
+          <button type="submit">Salvar Alterações</button>
+        </form>
+      </section>
     </main>
+
+    <!-- botão de logout -->
     <a href="/logout" id="logout" title="Sair">
       <i class="fa-solid fa-arrow-right-from-bracket" class="logout-icon"></i>
     </a>

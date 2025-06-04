@@ -1,26 +1,14 @@
 [
   {
     "nome": "Teste",
-    "imagemUrl": "https://arquivos.sistemaeso.com.br/blog/imagens/seguranca-no-trabalho/o-que-e-um-epi-equipamento-de-protecao-individual.jpg",
+    "imagemUrl": "1",
     "preco": "100,00",
-    "id": 1748991766487
+    "id": 1749059107881
   },
   {
     "nome": "Teste",
     "imagemUrl": "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
     "preco": "100,00",
-    "id": 1748992135703
-  },
-  {
-    "nome": "Teste",
-    "imagemUrl": "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
-    "preco": "100,00",
-    "id": 1748992214785
-  },
-  {
-    "nome": "Teste",
-    "imagemUrl": "https://storage.googleapis.com/proudcity/mebanenc/uploads/2021/03/placeholder-image.png",
-    "preco": "100,00",
-    "id": 1748992229386
+    "id": 1749059153434
   }
 ]

@@ -12,9 +12,8 @@ async function carregarEquipamentos() {
       item.classList.add("item-equipamento");
       item.innerHTML = `
         <strong>${eq.nome}</strong> R$ ${eq.preco}
-        <button id="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
-        <button id="btn-editar" onclick="editarEquipamento(${eq.id})">Editar</button>
-      `;
+        <button class="btn-excluir" onclick="deletarEquipamento(${eq.id})">Excluir</button>
+        `;
       lista.appendChild(item);
     });
   } catch (erro) {
@@ -49,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           "Content-Type": "application/json",
         },
+        credentials: "include",
         body: JSON.stringify(novoEquipamento),
       });
       const dados = await response.json();

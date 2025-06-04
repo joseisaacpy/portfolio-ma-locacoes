@@ -85,18 +85,18 @@ ul#lista-equipamentos button {
 }
 
 /* botões */
-#btn-excluir {
+.btn-excluir {
   background-color: #dc0b0b;
 }
-#btn-excluir:hover {
+.btn-excluir:hover {
   background-color: #760202;
 }
 
-#btn-editar {
+.btn-editar {
   background-color: var(--color-logo-yellow);
 }
 
-#btn-editar:hover {
+.btn-editar:hover {
   background-color: var(--color-5);
 }
 
